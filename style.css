@@ -1,0 +1,142 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: var(--header);
+}
+
+.title {
+    font-size: 32px;
+    color: var(--primary-yellow);
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Main game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header and Title styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.game-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100px;
+}
+
+.game-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.game-button:active {
+    transform: scale(1);
+}
+
+/* Disabled button styling */
+.game-button:disabled {
+    background-color: #bdc3c7; /* Gray color */
+    color: #7f8c8d; /* Darker text for better readability */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    transform: none; /* Disable the hover and active transformations */
+}
+
+/* Results section */
+.results {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 1rem;
+    min-height: 50px;  
+    width: 100%;       
+    padding: 10px;
+    box-sizing: border-box; 
+    text-align: center;   
+}
+
+#winner{
+    margin: 20px;
+}
+
+#score {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 14px 12px rgba(0, 0, 0, 0.1);
+    color:#2980b9;
+}
+
+/* Restart button styling */
+#btnRestart {
+    background-color: #e74c3c;
+    margin-top: 1.5rem;
+}
+
+#btnRestart:hover {
+    background-color: #c0392b;
+}
+
+/* Disabled Restart button styling */
+#btnRestart:disabled {
+    background-color: #95a5a6; /* Gray color for the disabled restart button */
+    cursor: not-allowed;
+}
